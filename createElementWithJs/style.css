@@ -1,0 +1,10 @@
+.container {
+    box-sizing: border-box;
+    border: 1px red solid;
+    height: auto;
+    width: 750px;
+}
+
+.card {
+    border: 1px blue solid;
+}
