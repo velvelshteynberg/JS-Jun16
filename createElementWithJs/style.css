@@ -2,11 +2,17 @@
     box-sizing: border-box;
     border: 1px red solid;
     height: auto;
-    width: 750px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .card {
     border: 1px blue solid;
+    border: 15px;
+    margin: 15px;
 }
 
 .border {
