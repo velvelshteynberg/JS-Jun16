@@ -270,6 +270,20 @@ console.log("Greatness");
             newDiv.append(companyTag);
             newDiv.append(residenceTag);
             newDiv.classList.add('card');
+            
+
+
+            let button = document.createElement('button');
+            button.innerText = 'Vote for me';
+            newDiv.append(button);
+            counter = 0; 
+            button.addEventListener('click', function(){
+              let totalVotes = document.createElement('h4');
+              counter = counter + 1;
+              return counter;
+            });
+
+
             div.append(newDiv);
         });
         
