@@ -275,14 +275,17 @@ console.log("Greatness");
 
             let button = document.createElement('button');
             button.innerText = 'Vote for me';
-            newDiv.append(button);
-            counter = 0; 
-            button.addEventListener('click', function(){
-              let totalVotes = document.createElement('h4');
-              counter = counter + 1;
-              return counter;
-            });
+            newDiv.append(button); 
 
+            let counter = 0;
+            button.addEventListener('click', function(){
+              counter += 1;
+              let totalVotes = document.createElement('h4');
+              totalVotes.innerHTML = counter;
+              newDiv.append(totalVotes);
+            });
+            
+            
 
             div.append(newDiv);
         });
