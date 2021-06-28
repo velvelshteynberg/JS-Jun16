@@ -8,3 +8,8 @@
 .card {
     border: 1px blue solid;
 }
+
+.border {
+    border: 2px red solid;
+    width: 35px;
+}

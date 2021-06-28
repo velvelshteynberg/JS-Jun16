@@ -281,6 +281,7 @@ console.log("Greatness");
             button.addEventListener('click', function(){
               counter += 1;
               let totalVotes = document.createElement('h4');
+              totalVotes.classList.add('border')
               totalVotes.innerHTML = counter;
               newDiv.append(totalVotes);
             });
