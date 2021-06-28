@@ -278,11 +278,11 @@ console.log("Greatness");
             newDiv.append(button); 
 
             let counter = 0;
+            let totalVotes = document.createElement('h4');
             button.addEventListener('click', function(){
               counter += 1;
-              let totalVotes = document.createElement('h4');
               totalVotes.classList.add('border')
-              totalVotes.innerHTML = counter;
+              totalVotes.innerText = counter;
               newDiv.append(totalVotes);
             });
             
