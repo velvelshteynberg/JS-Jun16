@@ -93,22 +93,21 @@
 }
 
 .recordImage {
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-    left: 15px;
+    height: 120px;
+    width: 120px;
+    margin-left: 25px;
 }
 
 .img2 {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     margin-bottom: 5px;
 }
 
 .img3 {
-    height: 20px;
-    width: 20px;
-    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
 }
 .img1Div  {
     flex-basis: 33.3%;
@@ -149,7 +148,6 @@
 
 .plusSign {
     text-align: center;
-    padding-top: 5px;
 }
 
 .artist {
@@ -158,5 +156,4 @@
 
 .genre {
     text-align: center;
-    padding-bottom: 5px;
 }
