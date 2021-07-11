@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftSide {
+    flex-basis: 30%;
+    border-right: 1px black solid;
+}
+
+.card {
+    height: 75px;
+    width: 300px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3 {
+    font-size: 16px;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.rightSide {
+    flex-basis: 70%;
+}
