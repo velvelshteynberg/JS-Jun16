@@ -17,21 +17,30 @@ body {
 }
 
 .card {
-    height: 75px;
-    width: 300px;
+    width: 80%;
+    margin: auto;
     border: 1px black solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px red solid;
 }
 
 h3 {
     font-size: 16px;
+    text-align: center;
 }
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
 }
 
 .rightSide {

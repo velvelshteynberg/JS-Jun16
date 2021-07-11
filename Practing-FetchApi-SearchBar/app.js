@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded',(e)=>{
         .then((e) => e.json())
         .then((apidata) => {
             let data = apidata.Search;
+            let cardsDiv = document.querySelector('.cards');
+                cardsDiv.innerHTML = '';
             data.forEach((movie) => {
+                let cardsDiv = document.querySelector('.cards');
                 let card = document.createElement('div');
                 card.classList.add('card');
 
@@ -19,21 +22,29 @@ document.addEventListener('DOMContentLoaded',(e)=>{
                 image.classList.add('icon');
                 card.appendChild(image);
 
+                let div = document.createElement('div');
+
                 let title = document.createElement('h3');
                 title.innerText = movie.Title;
-                card.appendChild(title);
+                div.appendChild(title);
 
                 let year = document.createElement('h3');
                 year.innerText = movie.Year;
-                card.appendChild(year);
+                div.appendChild(year);
+
+                card.appendChild(div);
 
                 let arrow = document.createElement('img');
                 arrow.src = "https://lh3.googleusercontent.com/proxy/kixvistHILmjy11q6WcYPwMASY9cUVjEIeKaaWZRV3tHdpHsRa2dnp-NJd2KbwnO5W91l8wQCF7pRxnRi3PdsdozHSbdz-s";
                 arrow.classList.add('icon');
                 card.appendChild(arrow);
 
-                let cardsDiv = document.querySelector('.cards');
+                
                 cardsDiv.appendChild(card);
+
+                arrow.addEventListener('click', (e) =>{
+                    
+                })
             })
         })
         .catch ((err) => (console.log(err)));
