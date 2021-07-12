@@ -47,9 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             fetch('https://api.adviceslip.com/advice')
                             .then((e) => e.json())
                             .then((data) => {
-                                let advice = document.createElement('h3');
-                                advice.innerText = data.slip.advice;
+                                let advice = document.createElement('input');
+                                advice.value = data.slip.advice;
+                                advice.classList.add('advice');
                                 leftDiv.appendChild(advice);
+                                button.disabled = true;
                             })
                             .catch((err) => console.log(err))
                         })

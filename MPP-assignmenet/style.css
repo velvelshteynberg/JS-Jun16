@@ -40,6 +40,10 @@ body{
     width: 250px;
 }
 
+.advice {
+    width: 80%;
+}
+
 .bottomDiv{
     min-height: 50%;
     display: flex;
