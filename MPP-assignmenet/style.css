@@ -8,14 +8,13 @@ body{
 }
 
 .parentDiv { 
-    height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.topDiv{
-    min-height: 50%;
+.topDiv {
+    height: 30%;
     border: 1px black solid;
     display: flex;
     flex-direction: row;
@@ -23,21 +22,21 @@ body{
 
 .rightDiv {
     height: 100%;
-    width: 50%;
+    flex: 1;
     border: 3px green solid;
     order: 2;
 }
 
 .leftDiv {
     height: 100%;
-    width: 50%;
+    flex:1;
     border: 3px blue solid;
     order: 1;
 }
 
 .image {
-    height: 250px;
-    width: 250px;
+    height: 50%;
+    width: 50%;
 }
 
 .advice {
@@ -45,7 +44,6 @@ body{
 }
 
 .bottomDiv{
-    min-height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
